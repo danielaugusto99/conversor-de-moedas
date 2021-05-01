@@ -21,50 +21,65 @@
     </div>
 </body>
 
-<style>
-    body{
-        text-align: center;
-        background-color: #323232;
-    }
-    img{
-        width: 70%;
+    <style>
+        body{
+            text-align: center;
+            background-color: #323232;
+        }
+        img{
+            width: 70%;
+        }
+
+        h1{
+            color: #cfff00;
+            font-size: 60px;
+        }
+
+        input{
+            width: 150px;
+            height: 30px;
+        }
+
+        #input-real{
+            border:3px solid #cfff00;
+        }
+
+        #input-dolar{
+            border:3px solid red;
+        }
+
+        p{
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        button{
+            height: 40px;
+            width: 150px;
+            font-size: 20px;
+            cursor: pointer;
+            border: 3px solid #cfff00;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            color: #323232;
+            background-color: #cfff00;
+        }
+    </style>
+
+<script>
+
+    function calcularDolar(){
+
+    let real = document.getElementById("input-real").value
+    let dolar = document.getElementById("input-dolar").value
+
+    let resultado = real/dolar
+
+    alert(resultado)
     }
 
-    h1{
-        color: #cfff00;
-        font-size: 60px;
-    }
+</script>
 
-    input{
-        width: 150px;
-        height: 30px;
-    }
-
-    #input-real{
-        border:3px solid #cfff00;
-    }
-
-    #input-dolar{
-        border:3px solid red;
-    }
-
-    p{
-        font-weight: bold;
-        font-size: 30px;
-    }
-
-    button{
-        height: 40px;
-        width: 150px;
-        font-size: 20px;
-        cursor: pointer;
-        border: 3px solid #cfff00;
-        border-radius: 10px;
-    }
-
-    button:hover{
-        color: #323232;
-        background-color: #cfff00;
-    }
-
-</style>
+</html>
