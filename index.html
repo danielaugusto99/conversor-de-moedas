@@ -14,14 +14,14 @@
         <input id="input-real" type="number" placeholder="Valor em Reais">
         <input id="input-dolar" placeholder="Valor do Dolar">
 
-        <p>$ 0</p>
+        <p id="o-valor-final-do-dolar-e">$ 0</p>
 
 
         <button onclick="calcularDolar()">Converter</button>
     </div>
 </body>
 
-    <style>
+<style>
         body{
             text-align: center;
             background-color: #323232;
@@ -66,21 +66,22 @@
             color: #323232;
             background-color: #cfff00;
         }
-    </style>
+</style>
 
 <script>
 
-    function calcularDolar(){
+        function calcularDolar(){
 
-    let real = document.getElementById("input-real").value
-    let dolar = document.getElementById("input-dolar").value
+        let real = document.getElementById("input-real").value // variavel guarda o valor do real digitado
+        let dolar = document.getElementById("input-dolar").value // variavel guarda o valor do dolar digitado
 
-    let resultado = real/dolar
+        let resultado = real/dolar // variavel guarda o valor do resultado
+        var frase="O valor total em dólar é de: \n $";
 
-    alert(resultado)
-    }
+        alert(frase + resultado) // mostra na tela o resultado
+        }
 
-    
+        
 
 </script>
 
